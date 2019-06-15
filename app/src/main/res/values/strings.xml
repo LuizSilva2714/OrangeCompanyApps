@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Orange Company Apps</string>
+    <string name="drawer_aberto">Drawer aberto</string>
+    <string name="drawer_fechado">Drawer fechado</string>
+</resources>
