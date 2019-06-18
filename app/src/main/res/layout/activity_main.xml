@@ -1,25 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
+<ScrollView android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <FrameLayout
-        android:id="@+id/content_frame"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_height="match_parent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-    
-    <ListView
-        android:layout_gravity="start"
-        android:id="@+id/left_drawer"
-        android:layout_width="240dp"
-        android:layout_height="match_parent"
-        android:choiceMode="singleChoice"
-        android:divider="@android:color/holo_orange_dark"
-        android:dividerHeight="0dp"
-        android:background="#111"/>
+        android:orientation="vertical"
+        android:padding="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
-</android.support.v4.widget.DrawerLayout>
+        <ImageView
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/orange"
+            android:id="@+id/orangeLogo"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sobre_nos"
+            android:layout_below="@id/orangeLogo"
+            android:layout_alignParentLeft="true"
+            android:textSize="22dp"
+            android:textColor="#FF9800"
+            android:id="@+id/ttlSobre"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/ttlSobre"
+            android:id="@+id/txtSobre"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:text="@string/texto_sobre_nos"
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fale_conosco"
+            android:layout_below="@id/txtSobre"
+            android:layout_alignParentLeft="true"
+            android:textSize="22dp"
+            android:textColor="#FF9800"
+            android:id="@+id/ttlFale"
+            android:layout_marginBottom="15dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/ttlFale"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:id="@+id/lbNome"
+            android:text="@string/nome"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNome"
+            android:layout_below="@id/lbNome"
+            android:inputType="text"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/edtNome"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:id="@+id/lbEmail"
+            android:text="@string/e_mail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEmail"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/lbEmail"
+            android:layout_marginBottom="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/edtEmail"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
+            android:id="@+id/lbMensagem"
+            android:text="@string/mensagem"
+            />
+        <Text
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtMensagem"
+            android:inputType="textLongMessage"
+            android:layout_below="@id/lbMensagem"
+            />
+    </RelativeLayout>
+</ScrollView>
+
