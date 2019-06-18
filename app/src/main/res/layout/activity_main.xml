@@ -93,15 +93,13 @@
             android:layout_marginBottom="5dp"
             android:textColor="#000"
             android:id="@+id/lbMensagem"
-            android:text="@string/mensagem"
-            />
-        <Text
+            android:text="@string/mensagem"/>
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edtMensagem"
-            android:inputType="textLongMessage"
-            android:layout_below="@id/lbMensagem"
-            />
+            android:inputType="textMultiLine"
+            android:layout_below="@id/lbMensagem"/>
     </RelativeLayout>
 </ScrollView>
 
