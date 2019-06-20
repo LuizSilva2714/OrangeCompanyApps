@@ -33,7 +33,7 @@
             android:padding="10dp"
             android:layout_below="@id/ttlSobre"
             android:id="@+id/txtSobre"
-            android:textSize="16dp"
+            android:textSize="18dp"
             android:textColor="#000"
             android:text="@string/texto_sobre_nos"
             android:layout_marginBottom="30dp"/>
@@ -92,14 +92,47 @@
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="5dp"
             android:textColor="#000"
+            android:id="@+id/lbAssunto"
+            android:text="@string/assunto"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtAssunto"
+            android:inputType="text"
+            android:breakStrategy="simple"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/lbAssunto"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@id/edtAssunto"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="#000"
             android:id="@+id/lbMensagem"
-            android:text="@string/mensagem"/>
+            android:text="@string/mensagem"
+            />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/edtMensagem"
             android:inputType="textMultiLine"
-            android:layout_below="@id/lbMensagem"/>
+            android:breakStrategy="simple"
+            android:layout_below="@id/lbMensagem"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:background="#FF9800"
+            android:text="Enviar"
+            android:textColor="#fff"
+            android:onClick="sendEmail"
+            android:layout_below="@id/edtMensagem"/>
     </RelativeLayout>
 </ScrollView>
 

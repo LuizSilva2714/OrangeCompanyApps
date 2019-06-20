@@ -23,4 +23,5 @@ Orange Company Apps: o sucesso a um app de distância!</string>
     <string name="fale_conosco">Fale conosco</string>
     <string name="e_mail">E-mail</string>
     <string name="mensagem">Mensagem</string>
+    <string name="assunto">Assunto</string>
 </resources>
